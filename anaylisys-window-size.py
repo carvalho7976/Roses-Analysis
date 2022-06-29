@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from roses.statistical_test.kruskal_wallis import kruskal_wallis
+from roses.statistical_test.wilcoxon import willcoxon
 from roses.effect_size import vargha_delaney
 
 # rpy2
@@ -56,14 +57,16 @@ if __name__ == '__main__':
         #df.drop(indexNames , inplace=True)
         fig, ax = plt.subplots(figsize=(10,6))
 
-        k = kruskal_wallis(df, 'ROC','Approach')
+        k = willcoxon(df, 'ROC','Approach')
+        #k = kruskal_wallis(df, 'ROC','Approach')
+        
         kruskal_result, posthoc = k.apply(ax)
         
         plt.tight_layout()
 
         #kruskal_result
 
-        plt.savefig( dataset + "-kruskal-all.pdf", bbox_inches='tight')
+        plt.savefig( dataset + "-kruskall-all.pdf", bbox_inches='tight')
         plt.cla()
         plt.close(fig)
         mean, best = print_mean(df)
@@ -72,9 +75,12 @@ if __name__ == '__main__':
 
         print(mean.head(15))
 
-        print("post hoc")
         #print(posthoc[0])
-
+        print("***********")
+        print(posthoc[0])
+        print("***********")
+        print(posthoc[1])
+        print("***********")
         # Get the posthoc and prepare the comparison against the best algorithm
         df_eff = vargha_delaney.reduce(posthoc[1], best)
 

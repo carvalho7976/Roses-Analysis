@@ -1,4 +1,4 @@
-Dataset;Algoritm;window;model;resample;F1-Score(weighted);Accuracy;Sensitivity;Specificity;ROCAUCscore
+Dataset;Algoritm;window;model;resample;F1-Score(weighted);Accuracy;Sensitivity;Specificity;ROC
 wro4j;RandomForest;W2;model2;ADA;0.9471205387;0.9459343489;0.8203703704;0.96238777;0.8913790702
 wro4j;RandomForest;W2;model1;ADA;0.9456318927;0.9444325252;0.812962963;0.9616597913;0.8873113771
 wro4j;RandomForest;W3;model2;ADA;0.9366822295;0.9347581552;0.8044692737;0.9526612078;0.8785652408

@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore", category=RRuntimeWarning)
 # pandas2ri.activate()
 
 
-class kruskal_wallis(object):
+class willcoxon(object):
 
     def __init__(self, df, val_col: str, group_col: str, sort=True):
         self.df = df
@@ -36,15 +36,18 @@ class kruskal_wallis(object):
             self.r_dataframe = ro.conversion.py2rpy(self.df)
 
     def apply(self, ax, alpha=0.05, plot=True, ylabel=''):
-        kruskal = pg.kruskal(
-            dv=self.val_col, between=self.group_col, data=self.df)
+       
+        x = self.df.drop( self.df[ self.df.Approach != "Our"].index)
+        y = self.df.drop( self.df[ self.df.Approach != "Trad"].index)
+        wilcoxon = pg.wilcoxon(x['ROC'],y['ROC'])
 
-        if 'p-unc' in kruskal.columns:
-            pvalue = kruskal['p-unc'][0]
-
+        if 'p-val' in wilcoxon.columns:
+            pvalue = wilcoxon['p-val'][0]
+            print("***** W Value ***")
+            print(wilcoxon['W-val'])
             if plot:
-                chi_squared, degree_freed = kruskal[
-                    'H'][0], kruskal['ddof1'][0]
+                chi_squared, degree_freed = wilcoxon[
+                    'RBC'][0], wilcoxon['CLES'][0]
 
                 p = "< 0.001" if pvalue < 0.001 else (
                     "< 0.01" if pvalue < 0.01 else ("< 0.05" if pvalue < 0.05 else (round(pvalue, 3))))
@@ -63,15 +66,15 @@ class kruskal_wallis(object):
                            color='b', linestyle='--', linewidth=2)
 
                 ax.set_ylabel(ylabel)
-                ax.set_xlabel(f"\nKruskal-Wallis p-value = {p}", labelpad=15)
+                ax.set_xlabel(f"\nWilcoxon p-value = {p}", labelpad=15)
 
-            # If the Kruskal-Wallis test is significant, a post-hoc analysis can be performed
+            # If the wilcoxon-Wallis test is significant, a post-hoc analysis can be performed
             # to determine which levels of the independent variable differ from
             # each other level.
             if pvalue < alpha:
-                return kruskal, [self._post_hoc_nemenyi(), VD_A_DF(self.df, self.val_col, self.group_col)]
+                return wilcoxon, [self._post_hoc_nemenyi(), VD_A_DF(self.df, self.val_col, self.group_col)]
 
-        return kruskal, None
+        return wilcoxon, None
 
     def _post_hoc_nemenyi(self):
         """
@@ -80,7 +83,7 @@ class kruskal_wallis(object):
         :return:
         """
 
-        rposthoc = """kruskal.post.hoc <- function(value, group, alpha = 0.05){{
+        rposthoc = """wilcoxon.post.hoc <- function(value, group, alpha = 0.05){{
                 {0}
                 {1}
                 {2}                            
@@ -103,6 +106,6 @@ class kruskal_wallis(object):
             }}
             """.format(require_r_package("PMCMRplus"), require_r_package("devtools"), require_r_package("scmamp"))
 
-        kruskal_post_hoc_nemenyi = ro.r(rposthoc)
+        wilcoxon_post_hoc_nemenyi = ro.r(rposthoc)
 
-        return kruskal_post_hoc_nemenyi(self.r_dataframe.rx2(self.val_col), self.r_dataframe.rx2(self.group_col))
+        return wilcoxon_post_hoc_nemenyi(self.r_dataframe.rx2(self.val_col), self.r_dataframe.rx2(self.group_col))

@@ -42,7 +42,9 @@ def VD_A(treatment: List[float], control: List[float]):
     levels = [0.147, 0.33, 0.474]  # effect sizes from Hess and Kromrey, 2004
     magnitude = ["negligible", "small", "medium", "large"]
     scaled_A = (A - 0.5) * 2
-
+    print("Scale A")
+    print(scaled_A)
+    print("*****")
     magnitude = magnitude[bisect_left(levels, abs(scaled_A))]
     estimate = A
 
