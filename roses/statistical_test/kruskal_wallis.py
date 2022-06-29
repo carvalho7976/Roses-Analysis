@@ -36,6 +36,9 @@ class kruskal_wallis(object):
             self.r_dataframe = ro.conversion.py2rpy(self.df)
 
     def apply(self, ax, alpha=0.05, plot=True, ylabel=''):
+        print(self.val_col)
+        print(self.group_col)
+        print(self.df)
         kruskal = pg.kruskal(
             dv=self.val_col, between=self.group_col, data=self.df)
 
