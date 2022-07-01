@@ -35,11 +35,9 @@ class willcoxon(object):
         with localconverter(ro.default_converter + pandas2ri.converter):
             self.r_dataframe = ro.conversion.py2rpy(self.df)
 
-    def apply(self, ax, alpha=0.05, plot=True, ylabel=''):
-       
-        x = self.df.drop( self.df[ self.df.Approach != "Our"].index)
-        y = self.df.drop( self.df[ self.df.Approach != "Trad"].index)
-        wilcoxon = pg.wilcoxon(x['ROC'],y['ROC'])
+    def apply(self,x, y, ax, alpha=0.05, plot=True, ylabel=''):
+      
+        wilcoxon = pg.wilcoxon(x,y)
 
         if 'p-val' in wilcoxon.columns:
             pvalue = wilcoxon['p-val'][0]

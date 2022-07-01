@@ -35,7 +35,7 @@ def print_mean(df):
     This function group the data and presents for each algorithm the mean, std, max, and min values.
     Besides that, it returns the best algorithm based on the maximum mean value.
     """
-    mean = df.groupby(['Approach'], as_index=False).agg({'ROC': ['mean', 'std', 'max', 'min']})
+    mean = df.groupby(['model'], as_index=False).agg({'ROC': ['mean', 'std', 'max', 'min']})
     mean.columns = ['name', 'mean', 'std', 'max', 'min']
     
     # Round values (to be used in the article)
@@ -51,22 +51,28 @@ if __name__ == '__main__':
     for dataset in DATASETS:
         df = pd.read_csv('resources/' + dataset, sep=";")
 
-        #RQ 3, dropar abordagem tradicional
-        #df = df.drop(df[df.Approach != "Our"].index)
+        #RQ 3 Rq 4, dropar abordagem tradicional
+        df = df.drop(df[df.Approach != "Our"].index)
 
         #df.drop(indexNames , inplace=True)
         fig, ax = plt.subplots(figsize=(10,6))
 
-        k = willcoxon(df, 'ROC','Approach')
-        #k = kruskal_wallis(df, 'ROC','Approach')
-        
-        kruskal_result, posthoc = k.apply(ax)
+        # for KRUSKAL WALLIS ANALYSIS
+        #k = kruskal_wallis(df, 'ROC', 'model')
+        #kruskal_result, posthoc = k.apply(ax)
+
+
+        #for willcoxon
+        k = willcoxon(df, 'ROC','model')
+        x = df.drop(df[df.model == "Set 1"].index)
+        y = df.drop(df[df.model == "Set 2"].index)
+        kruskal_result, posthoc = k.apply(x['ROC'],y['ROC'],ax)
         
         plt.tight_layout()
 
         #kruskal_result
 
-        plt.savefig( dataset + "-kruskall-all.pdf", bbox_inches='tight')
+        plt.savefig( dataset + "-wilcoxon-all.pdf", bbox_inches='tight')
         plt.cla()
         plt.close(fig)
         mean, best = print_mean(df)
