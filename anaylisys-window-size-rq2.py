@@ -35,7 +35,7 @@ def print_mean(df):
     This function group the data and presents for each algorithm the mean, std, max, and min values.
     Besides that, it returns the best algorithm based on the maximum mean value.
     """
-    mean = df.groupby(['model'], as_index=False).agg({'ROC': ['mean', 'std', 'max', 'min']})
+    mean = df.groupby(['Approach'], as_index=False).agg({'ROC': ['mean', 'std', 'max', 'min']})
     mean.columns = ['name', 'mean', 'std', 'max', 'min']
     
     # Round values (to be used in the article)
@@ -51,47 +51,33 @@ if __name__ == '__main__':
     for dataset in DATASETS:
         df = pd.read_csv('resources/' + dataset, sep=";")
 
-        #RQ 1 Rq3 Rq 4, dropar abordagem tradicional
-        #df = df.drop(df[df.Approach != "Our"].index)
-        
         #drop for RQ 2,3,4
         df = df.drop(df[df.window == 2].index)
         df = df.drop(df[df.window == 4].index)
 
   
-        #drop for rq4
-        #df = df.drop(df[df.model == "Set 2"].index)
-        #df = df.drop(df[df.model == "Set 3"].index)
-        #df = df.drop(df[df.model == "Set 4"].index)
-        #df = df.drop(df[df.model == "Set 5"].index)
-        #df = df.drop(df[df.model == "Set 6"].index)
-
         #df.drop(indexNames , inplace=True)
         fig, ax = plt.subplots(figsize=(10,6))
-       
-        # for KRUSKAL WALLIS ANALYSIS
-       # k = kruskal_wallis(df, 'ROC', 'Algoritm')
-       # kruskal_result, posthoc = k.apply(ax)
-
-        #drop models for rq3 
-        #df = df.drop(df[df.model == "Set 1"].index)
-        #df = df.drop(df[df.model == "Set 2"].index)
-        #df = df.drop(df[df.model == "Set 3"].index)
-        #df = df.drop(df[df.model == "Set 4"].index)
-        #df = df.drop(df[df.model == "Set 5"].index)
+      
+        #drop models for rq2 
+        df = df.drop(df[df.model == "Set 1"].index)
+        df = df.drop(df[df.model == "Set 2"].index)
+        df = df.drop(df[df.model == "Set 3"].index)
+        df = df.drop(df[df.model == "Set 4"].index)
+        df = df.drop(df[df.model == "Set 5"].index)
         #df = df.drop(df[df.model == "Set 6"].index)
 
         #for willcoxon
-        k = willcoxon(df, 'ROC','model')
-        x = df.drop(df[df.model == "Set 3"].index)
-        y = df.drop(df[df.model == "Set 6"].index)
+        k = willcoxon(df, 'ROC','Approach')
+        x = df.drop(df[df.Approach == "Our"].index)
+        y = df.drop(df[df.Approach == "Trad"].index)
         kruskal_result, posthoc = k.apply(x['ROC'],y['ROC'],ax)
         
         plt.tight_layout()
-
+        #{'model1': 'AM', 'model2': 'SEM','model3': 'ESM','model4': 'SSM','model6': 'SM','model7': 'EM'
         #kruskal_results
-        ax.set_ylabel("ROC/AUC - Set 3 x Set 6" )
-        plt.savefig("results/resultados-RQ3-Set3xSet6-ROC.pdf", bbox_inches='tight')
+        ax.set_ylabel("ROC/AUC - EM" )
+        plt.savefig("results/resultados-RQ2-EM.pdf", bbox_inches='tight')
         plt.cla()
         plt.close(fig)
         mean, best = print_mean(df)

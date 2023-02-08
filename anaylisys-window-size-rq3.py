@@ -47,12 +47,12 @@ def print_mean(df):
     return mean, bestalg['name']
 
 if __name__ == '__main__':
-    DATASETS = [ 'resultados-todos-sets.csv']
+    DATASETS = [ 'resultados-todos-sets-renamed.csv']
     for dataset in DATASETS:
         df = pd.read_csv('resources/' + dataset, sep=";")
 
         #RQ 1 Rq3 Rq 4, dropar abordagem tradicional
-        #df = df.drop(df[df.Approach != "Our"].index)
+        df = df.drop(df[df.Approach != "Our"].index)
         
         #drop for RQ 2,3,4
         df = df.drop(df[df.window == 2].index)
@@ -74,24 +74,24 @@ if __name__ == '__main__':
        # kruskal_result, posthoc = k.apply(ax)
 
         #drop models for rq3 
-        #df = df.drop(df[df.model == "Set 1"].index)
-        #df = df.drop(df[df.model == "Set 2"].index)
-        #df = df.drop(df[df.model == "Set 3"].index)
-        #df = df.drop(df[df.model == "Set 4"].index)
-        #df = df.drop(df[df.model == "Set 5"].index)
-        #df = df.drop(df[df.model == "Set 6"].index)
+        df = df.drop(df[df.model == "AM"].index)
+        df = df.drop(df[df.model == "SEM"].index)
+        df = df.drop(df[df.model == "ESM"].index)
+        #df = df.drop(df[df.model == "SSM"].index)
+        #df = df.drop(df[df.model == "SM"].index)
+        df = df.drop(df[df.model == "EM"].index)
 
         #for willcoxon
         k = willcoxon(df, 'ROC','model')
-        x = df.drop(df[df.model == "Set 3"].index)
-        y = df.drop(df[df.model == "Set 6"].index)
+        x = df.drop(df[df.model == "SSM"].index)
+        y = df.drop(df[df.model == "SM"].index)
         kruskal_result, posthoc = k.apply(x['ROC'],y['ROC'],ax)
         
         plt.tight_layout()
 
         #kruskal_results
-        ax.set_ylabel("ROC/AUC - Set 3 x Set 6" )
-        plt.savefig("results/resultados-RQ3-Set3xSet6-ROC.pdf", bbox_inches='tight')
+        ax.set_ylabel("ROC/AUC - SSM x SM" )
+        plt.savefig("results/resultados-RQ3-SSMxSM.pdf", bbox_inches='tight')
         plt.cla()
         plt.close(fig)
         mean, best = print_mean(df)
