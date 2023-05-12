@@ -35,7 +35,7 @@ def print_mean(df):
     This function group the data and presents for each algorithm the mean, std, max, and min values.
     Besides that, it returns the best algorithm based on the maximum mean value.
     """
-    mean = df.groupby(['model'], as_index=False).agg({'ROC': ['mean', 'std', 'max', 'min']})
+    mean = df.groupby(['model'], as_index=False).agg({'F1-Score': ['mean', 'std', 'max', 'min']})
     mean.columns = ['name', 'mean', 'std', 'max', 'min']
     
     # Round values (to be used in the article)
@@ -47,7 +47,7 @@ def print_mean(df):
     return mean, bestalg['name']
 
 if __name__ == '__main__':
-    DATASETS = [ 'resultados-todos-sets-renamed.csv']
+    DATASETS = [ 'resultados-todos-sets-renamed-2.csv']
     for dataset in DATASETS:
         df = pd.read_csv('resources/' + dataset, sep=";")
 
@@ -70,28 +70,28 @@ if __name__ == '__main__':
         fig, ax = plt.subplots(figsize=(10,6))
        
         # for KRUSKAL WALLIS ANALYSIS
-       # k = kruskal_wallis(df, 'ROC', 'Algoritm')
-       # kruskal_result, posthoc = k.apply(ax)
+        k = kruskal_wallis(df, 'F1-Score', 'model')
+        kruskal_result, posthoc = k.apply(ax)
 
         #drop models for rq3 
-        df = df.drop(df[df.model == "AM"].index)
-        df = df.drop(df[df.model == "SEM"].index)
-        df = df.drop(df[df.model == "ESM"].index)
+       # df = df.drop(df[df.model == "AM"].index)
+       # df = df.drop(df[df.model == "SEM"].index)
+       # df = df.drop(df[df.model == "ESM"].index)
         #df = df.drop(df[df.model == "SSM"].index)
         #df = df.drop(df[df.model == "SM"].index)
-        df = df.drop(df[df.model == "EM"].index)
+        #df = df.drop(df[df.model == "EM"].index)
 
         #for willcoxon
-        k = willcoxon(df, 'ROC','model')
-        x = df.drop(df[df.model == "SSM"].index)
-        y = df.drop(df[df.model == "SM"].index)
-        kruskal_result, posthoc = k.apply(x['ROC'],y['ROC'],ax)
+       # k = willcoxon(df, 'ROC','model')
+       # x = df.drop(df[df.model == "SSM"].index)
+       # y = df.drop(df[df.model == "SM"].index)
+       # kruskal_result, posthoc = k.apply(x['ROC'],y['ROC'],ax)
         
         plt.tight_layout()
 
         #kruskal_results
-        ax.set_ylabel("ROC/AUC - SSM x SM" )
-        plt.savefig("results/resultados-RQ3-SSMxSM.pdf", bbox_inches='tight')
+        ax.set_ylabel("F1-Score - All" )
+        plt.savefig("results/results-rq3-kruskal-wallis-f1score.pdf", bbox_inches='tight')
         plt.cla()
         plt.close(fig)
         mean, best = print_mean(df)

@@ -30,12 +30,12 @@ plt.rcParams.update({
     'axes.labelsize' : FONT_SIZE_PLOTS
 })
 
-def print_mean(df, metric):
+def print_mean(df,metric):
     """
     This function group the data and presents for each algorithm the mean, std, max, and min values.
     Besides that, it returns the best algorithm based on the maximum mean value.
     """
-    mean = df.groupby(['Approach'], as_index=False).agg({metric: ['mean', 'std', 'max', 'min']})
+    mean = df.groupby(['model'], as_index=False).agg({metric: ['mean', 'std', 'max', 'min']})
     mean.columns = ['name', 'mean', 'std', 'max', 'min']
     
     # Round values (to be used in the article)
@@ -50,42 +50,38 @@ if __name__ == '__main__':
     DATASETS = [ 'resultados-todos-sets-renamed-2.csv']
     metrics = ['F1-Score','Accuracy','Sensitivity','ROC']
     models = ['St','Ev','StEv','StSm','EvSm','AF']
+
     for dataset in DATASETS:
         for metric in metrics:
             for model in models:
                 df = pd.read_csv('resources/' + dataset, sep=";")
 
-                #drop for RQ 2,3,4
+                #RQ rq4
+                df = df.drop(df[df.Approach != "Our"].index)
                 df = df.drop(df[df.window == 2].index)
                 df = df.drop(df[df.window == 4].index)
-
-        
+                df = df.drop(df[df.model != model].index)
+                
                 #df.drop(indexNames , inplace=True)
                 fig, ax = plt.subplots(figsize=(10,6))
-            
-                #drop models for rq2 
-                df = df.drop(df[df.model != model].index)
                
+                # for KRUSKAL WALLIS ANALYSIS
+                k = kruskal_wallis(df, metric, 'Algoritm', sort=False)
+                kruskal_result, posthoc = k.apply(ax)
 
-                #for willcoxon
-                k = willcoxon(df, metric,'Approach')
-                x = df.drop(df[df.Approach == "Our"].index)
-                y = df.drop(df[df.Approach == "Trad"].index)
-                kruskal_result, posthoc = k.apply(x[metric],y[metric],ax)
+
                 
                 plt.tight_layout()
-                #{'model1': 'AM', 'model2': 'SEM','model3': 'ESM','model4': 'SSM','model6': 'SM','model7': 'EM'
                 #kruskal_results
-                ax.set_ylabel(metric + " - " + model )
-                plt.savefig("results/results-RQ2-" + metric + "-" + model + ".pdf", bbox_inches='tight')
+                ax.set_ylabel( model + " - " + metric )
+                
+                plt.savefig("results/resultados-rq4-" + metric +"-"+ model +".pdf", bbox_inches='tight')
                 plt.cla()
                 plt.close(fig)
                 mean, best = print_mean(df,metric)
 
                 print("Best config:", best, "\n\nMeans:")
                 try:
-                    print(mean.head(15))
-
                     #print(posthoc[0])
                     print("***********")
                     print(posthoc[0])
@@ -189,5 +185,8 @@ if __name__ == '__main__':
                             print("& ", end="")
                         cont += 1
                     print("\n\n")
+
                 except:
-                 print("Sem diferenca estatistica metrica " + metric)
+                    print("Sem diferenca estatistica metrica " + metric)
+
+            

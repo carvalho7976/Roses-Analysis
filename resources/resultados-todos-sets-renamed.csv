@@ -1,4 +1,4 @@
-Dataset;Algoritm;Approach;window;model;resample;F1-Score(micro);F1-Score(macro);F1-Score(weighted);Accuracy;Sensitivity;Specificity;ROC
+Dataset;Algoritm;Approach;window;model;resample;F1-Score(micro);F1-Score(macro);F1-Score;Accuracy;Sensitivity;Specificity;ROC
 commons-bcel;RandomForest;Our;4;ESM;SMOTE;0.9844559585;0.8913129628;0.9851510555;0.9844559585;0.8717948718;0.9883824844;0.9300886781
 commons-bcel;MLP;Our;4;ESM;SMOTE;0.9559585492;0.7776388863;0.9633527108;0.9559585492;0.8974358974;0.9579982127;0.9277170551
 commons-bcel;MLP;Our;4;ESM;ROS;0.9533678756;0.7699405463;0.9615280857;0.9533678756;0.8974358974;0.9553172475;0.9263765725
