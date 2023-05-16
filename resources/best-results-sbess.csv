@@ -1,0 +1,85 @@
+Application;Algorithm;Metrics;F1;Acc;Sen;AUC;RS
+commons-bcel;Decision Tree;Structural;0.79;0.66;0.75;0.71;RUS
+commons-bcel;Decision Tree;Both;0.88;0.80;0.83;0.81;RUS
+commons-bcel;Decision Tree;Evolution-based;0.90;0.81;0.74;0.78;ROS
+commons-csv;Decision Tree;Structural;0.85;0.75;0.80;0.77;RUS
+commons-csv;Decision Tree;Both;0.88;0.78;0.82;0.80;RUS
+commons-csv;Decision Tree;Evolution-based;0.84;0.73;0.67;0.70;RUS
+commons-io;Decision Tree;Structural;0.81;0.69;0.63;0.66;RUS
+commons-io;Decision Tree;Both;0.96;0.93;0.66;0.80;ENN
+commons-io;Decision Tree;Evolution-based;0.91;0.84;0.66;0.75;ROS
+easymock;Decision Tree;Structural;0.94;0.89;0.66;0.78;ROS
+easymock;Decision Tree;Both;0.85;0.75;0.78;0.76;RUS
+easymock;Decision Tree;Evolution-based;0.42;0.27;0.94;0.60;ENN
+Openfire;Decision Tree;Structural;0.86;0.76;0.74;0.75;RUS
+Openfire;Decision Tree;Both;0.86;0.76;0.74;0.75;RUS
+Openfire;Decision Tree;Evolution-based;0.50;0.34;0.80;0.57;ADA
+pdfbox;Decision Tree;Structural;0.90;0.83;0.90;0.86;ROS
+pdfbox;Decision Tree;Both;0.94;0.90;0.88;0.89;ROS
+pdfbox;Decision Tree;Evolution-based;0.92;0.86;0.50;0.70;RUS
+wro4j;Decision Tree;Structural;0.75;0.61;0.63;0.62;RUS
+wro4j;Decision Tree;Both;0.77;0.64;0.66;0.65;RUS
+wro4j;Decision Tree;Evolution-based;0.84;0.73;0.46;0.60;ENN
+commons-bcel;Logistic Regression;Structural;0.82;0.70;0.63;0.67;ENN
+commons-bcel;Logistic Regression;Both;0.89;0.81;0.80;0.80;ENN
+commons-bcel;Logistic Regression;Evolution-based;0.92;0.85;0.65;0.75;RUS
+commons-csv;Logistic Regression;Structural;0.89;0.80;0.69;0.75;ADA
+commons-csv;Logistic Regression;Both;0.89;0.81;0.67;0.74;ROS
+commons-csv;Logistic Regression;Evolution-based;0.88;0.79;0.38;0.59;RUS
+commons-io;Logistic Regression;Structural;0.83;0.71;0.63;0.67;ROS
+commons-io;Logistic Regression;Both;0.87;0.78;0.70;0.74;SMOTE
+commons-io;Logistic Regression;Evolution-based;0.90;0.83;0.51;0.67;RUS
+easymock;Logistic Regression;Structural;0.83;0.71;0.66;0.69;ADA
+easymock;Logistic Regression;Both;0.83;0.72;0.66;0.69;SMOTE
+easymock;Logistic Regression;Evolution-based;0.44;0.29;0.74;0.51;ENN
+Openfire;Logistic Regression;Structural;0.86;0.76;0.65;0.71;ENN
+Openfire;Logistic Regression;Both;0.86;0.76;0.66;0.71;ADA
+Openfire;Logistic Regression;Evolution-based;0.71;0.55;0.46;0.51;ROS
+pdfbox;Logistic Regression;Structural;0.80;0.69;0.58;0.64;ENN
+pdfbox;Logistic Regression;Both;0.86;0.77;0.71;0.74;ROS
+pdfbox;Logistic Regression;Evolution-based;0.92;0.86;0.50;0.70;RUS
+wro4j;Logistic Regression;Structural;0.85;0.75;0.60;0.68;SMOTE
+wro4j;Logistic Regression;Both;0.84;0.74;0.62;0.68;SMOTE
+wro4j;Logistic Regression;Evolution-based;0.77;0.63;0.49;0.56;ADA
+commons-bcel;MLP;Structural;0.79;0.66;0.79;0.72;RUS
+commons-bcel;MLP;Both;0.90;0.82;0.85;0.83;RUS
+commons-bcel;MLP;Evolution-based;0.90;0.82;0.73;0.78;ROS
+commons-csv;MLP;Structural;0.91;0.84;0.75;0.79;ROS
+commons-csv;MLP;Both;0.96;0.92;0.74;0.83;ROS
+commons-csv;MLP;Evolution-based;0.83;0.72;0.62;0.67;ROS
+commons-io;MLP;Structural;0.85;0.74;0.66;0.70;ROS
+commons-io;MLP;Both;0.95;0.90;0.77;0.84;ROS
+commons-io;MLP;Evolution-based;0.91;0.84;0.64;0.74;ADA
+easymock;MLP;Structural;0.92;0.85;0.79;0.82;ROS
+easymock;MLP;Both;0.95;0.90;0.83;0.87;ROS
+easymock;MLP;Evolution-based;0.41;0.27;0.93;0.60;SMOTE
+Openfire;MLP;Structural;0.91;0.84;0.68;0.76;ROS
+Openfire;MLP;Both;0.93;0.87;0.68;0.78;ROS
+Openfire;MLP;Evolution-based;0.49;0.33;0.80;0.56;ROS
+pdfbox;MLP;Structural;0.87;0.79;0.77;0.78;ROS
+pdfbox;MLP;Both;0.89;0.82;0.85;0.84;ROS
+pdfbox;MLP;Evolution-based;0.92;0.86;0.50;0.70;RUS
+wro4j;MLP;Structural;0.80;0.67;0.70;0.69;RUS
+wro4j;MLP;Both;0.81;0.69;0.71;0.70;RUS
+wro4j;MLP;Evolution-based;0.71;0.56;0.64;0.60;SMOTE
+commons-bcel;Random Forest;Structural;0.81;0.69;0.73;0.71;RUS
+commons-bcel;Random Forest;Both;0.90;0.82;0.86;0.84;RUS
+commons-bcel;Random Forest;Evolution-based;0.90;0.81;0.74;0.78;ROS
+commons-csv;Random Forest;Structural;0.86;0.76;0.83;0.80;RUS
+commons-csv;Random Forest;Both;0.88;0.79;0.85;0.82;RUS
+commons-csv;Random Forest;Evolution-based;0.84;0.73;0.67;0.70;RUS
+commons-io;Random Forest;Structural;0.79;0.66;0.75;0.71;RUS
+commons-io;Random Forest;Both;0.88;0.79;0.83;0.81;RUS
+commons-io;Random Forest;Evolution-based;0.91;0.84;0.66;0.75;ROS
+easymock;Random Forest;Structural;0.94;0.88;0.70;0.79;ROS
+easymock;Random Forest;Both;0.96;0.92;0.63;0.78;ROS
+easymock;Random Forest;Evolution-based;0.42;0.27;0.94;0.60;ENN
+Openfire;Random Forest;Structural;0.86;0.76;0.80;0.78;RUS
+Openfire;Random Forest;Both;0.87;0.77;0.81;0.79;RUS
+Openfire;Random Forest;Evolution-based;0.50;0.34;0.80;0.57;NONE
+pdfbox;Random Forest;Structural;0.90;0.83;0.90;0.86;ROS
+pdfbox;Random Forest;Both;0.94;0.90;0.87;0.89;ROS
+pdfbox;Random Forest;Evolution-based;0.92;0.86;0.50;0.70;RUS
+wro4j;Random Forest;Structural;0.79;0.66;0.66;0.66;RUS
+wro4j;Random Forest;Both;0.81;0.68;0.67;0.67;RUS
+wro4j;Random Forest;Evolution-based;0.85;0.74;0.45;0.60;ENN
