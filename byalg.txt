@@ -1,0 +1,324 @@
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica F1
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica F1
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica F1
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica Acc
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica Acc
+Best config: Both 
+
+Means:
+***********
+Sem diferenca estatistica metrica Acc
+?????????
+0.764172335600907
+Scale A
+0.528344671201814
+*****
+?????????
+0.48299319727891155
+Scale A
+-0.03401360544217691
+*****
+?????????
+0.4342403628117914
+Scale A
+-0.1315192743764172
+*****
+?????????
+0.19387755102040816
+Scale A
+-0.6122448979591837
+*****
+?????????
+0.19160997732426305
+Scale A
+-0.6167800453514739
+*****
+?????????
+0.4433106575963719
+Scale A
+-0.11337868480725621
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP   
+Logistic Regression 0.0325        -                   -     
+MLP                 0.9965        0.0167              -     
+Random Forest       0.9220        0.0039              0.9758
+
+***********
+                  base        compared_with             estimate   magnitude
+0        Decision Tree  Logistic Regression    0.764172335600907       large
+1        Decision Tree                  MLP  0.48299319727891155  negligible
+2        Decision Tree        Random Forest   0.4342403628117914  negligible
+3  Logistic Regression                  MLP  0.19387755102040816       large
+4  Logistic Regression        Random Forest  0.19160997732426305       large
+5                  MLP        Random Forest   0.4433106575963719  negligible
+***********
+Sem diferenca estatistica metrica Sen
+?????????
+0.764172335600907
+Scale A
+0.528344671201814
+*****
+?????????
+0.48299319727891155
+Scale A
+-0.03401360544217691
+*****
+?????????
+0.4342403628117914
+Scale A
+-0.1315192743764172
+*****
+?????????
+0.19387755102040816
+Scale A
+-0.6122448979591837
+*****
+?????????
+0.19160997732426305
+Scale A
+-0.6167800453514739
+*****
+?????????
+0.4433106575963719
+Scale A
+-0.11337868480725621
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP   
+Logistic Regression 0.0325        -                   -     
+MLP                 0.9965        0.0167              -     
+Random Forest       0.9220        0.0039              0.9758
+
+***********
+                  base        compared_with             estimate   magnitude
+0        Decision Tree  Logistic Regression    0.764172335600907       large
+1        Decision Tree                  MLP  0.48299319727891155  negligible
+2        Decision Tree        Random Forest   0.4342403628117914  negligible
+3  Logistic Regression                  MLP  0.19387755102040816       large
+4  Logistic Regression        Random Forest  0.19160997732426305       large
+5                  MLP        Random Forest   0.4433106575963719  negligible
+***********
+Sem diferenca estatistica metrica Sen
+?????????
+0.764172335600907
+Scale A
+0.528344671201814
+*****
+?????????
+0.48299319727891155
+Scale A
+-0.03401360544217691
+*****
+?????????
+0.4342403628117914
+Scale A
+-0.1315192743764172
+*****
+?????????
+0.19387755102040816
+Scale A
+-0.6122448979591837
+*****
+?????????
+0.19160997732426305
+Scale A
+-0.6167800453514739
+*****
+?????????
+0.4433106575963719
+Scale A
+-0.11337868480725621
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP   
+Logistic Regression 0.0325        -                   -     
+MLP                 0.9965        0.0167              -     
+Random Forest       0.9220        0.0039              0.9758
+
+***********
+                  base        compared_with             estimate   magnitude
+0        Decision Tree  Logistic Regression    0.764172335600907       large
+1        Decision Tree                  MLP  0.48299319727891155  negligible
+2        Decision Tree        Random Forest   0.4342403628117914  negligible
+3  Logistic Regression                  MLP  0.19387755102040816       large
+4  Logistic Regression        Random Forest  0.19160997732426305       large
+5                  MLP        Random Forest   0.4433106575963719  negligible
+***********
+Sem diferenca estatistica metrica Sen
+?????????
+0.691609977324263
+Scale A
+0.383219954648526
+*****
+?????????
+0.4478458049886621
+Scale A
+-0.10430839002267578
+*****
+?????????
+0.4376417233560091
+Scale A
+-0.12471655328798181
+*****
+?????????
+0.2675736961451247
+Scale A
+-0.46485260770975056
+*****
+?????????
+0.2743764172335601
+Scale A
+-0.4512471655328798
+*****
+?????????
+0.4954648526077097
+Scale A
+-0.009070294784580546
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP  
+Logistic Regression 0.248         -                   -    
+MLP                 0.956         0.080               -    
+Random Forest       0.948         0.074               1.000
+
+***********
+                  base        compared_with            estimate   magnitude
+0        Decision Tree  Logistic Regression   0.691609977324263      medium
+1        Decision Tree                  MLP  0.4478458049886621  negligible
+2        Decision Tree        Random Forest  0.4376417233560091  negligible
+3  Logistic Regression                  MLP  0.2675736961451247      medium
+4  Logistic Regression        Random Forest  0.2743764172335601      medium
+5                  MLP        Random Forest  0.4954648526077097  negligible
+***********
+Sem diferenca estatistica metrica AUC
+?????????
+0.691609977324263
+Scale A
+0.383219954648526
+*****
+?????????
+0.4478458049886621
+Scale A
+-0.10430839002267578
+*****
+?????????
+0.4376417233560091
+Scale A
+-0.12471655328798181
+*****
+?????????
+0.2675736961451247
+Scale A
+-0.46485260770975056
+*****
+?????????
+0.2743764172335601
+Scale A
+-0.4512471655328798
+*****
+?????????
+0.4954648526077097
+Scale A
+-0.009070294784580546
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP  
+Logistic Regression 0.248         -                   -    
+MLP                 0.956         0.080               -    
+Random Forest       0.948         0.074               1.000
+
+***********
+                  base        compared_with            estimate   magnitude
+0        Decision Tree  Logistic Regression   0.691609977324263      medium
+1        Decision Tree                  MLP  0.4478458049886621  negligible
+2        Decision Tree        Random Forest  0.4376417233560091  negligible
+3  Logistic Regression                  MLP  0.2675736961451247      medium
+4  Logistic Regression        Random Forest  0.2743764172335601      medium
+5                  MLP        Random Forest  0.4954648526077097  negligible
+***********
+Sem diferenca estatistica metrica AUC
+?????????
+0.691609977324263
+Scale A
+0.383219954648526
+*****
+?????????
+0.4478458049886621
+Scale A
+-0.10430839002267578
+*****
+?????????
+0.4376417233560091
+Scale A
+-0.12471655328798181
+*****
+?????????
+0.2675736961451247
+Scale A
+-0.46485260770975056
+*****
+?????????
+0.2743764172335601
+Scale A
+-0.4512471655328798
+*****
+?????????
+0.4954648526077097
+Scale A
+-0.009070294784580546
+*****
+Best config: Both 
+
+Means:
+***********
+                    Decision Tree Logistic Regression MLP  
+Logistic Regression 0.248         -                   -    
+MLP                 0.956         0.080               -    
+Random Forest       0.948         0.074               1.000
+
+***********
+                  base        compared_with            estimate   magnitude
+0        Decision Tree  Logistic Regression   0.691609977324263      medium
+1        Decision Tree                  MLP  0.4478458049886621  negligible
+2        Decision Tree        Random Forest  0.4376417233560091  negligible
+3  Logistic Regression                  MLP  0.2675736961451247      medium
+4  Logistic Regression        Random Forest  0.2743764172335601      medium
+5                  MLP        Random Forest  0.4954648526077097  negligible
+***********
+Sem diferenca estatistica metrica AUC

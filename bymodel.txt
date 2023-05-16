@@ -1,0 +1,480 @@
+?????????
+0.6530612244897959
+Scale A
+0.30612244897959173
+*****
+?????????
+0.7002551020408163
+Scale A
+0.4005102040816326
+*****
+?????????
+0.47066326530612246
+Scale A
+-0.058673469387755084
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.070 -              
+Structural      0.079 0.999          
+
+***********
+              base    compared_with             estimate   magnitude
+0             Both  Evolution-based   0.6530612244897959       small
+1             Both       Structural   0.7002551020408163      medium
+2  Evolution-based       Structural  0.47066326530612246  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8861 $\pm$ 0.0500 $\bigstar$
+1  Evolution-based  0.7636 $\pm$ 0.1910 $\triangledown$
+2       Structural   0.8493 $\pm$ 0.0510 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8861 $\pm$ 0.0500 $\bigstar$ & 0.7636 $\pm$ 0.1910 $\triangledown$ & 0.8493 $\pm$ 0.0510 $\vartriangle$ 
+
+
+\cellbold{0.8861 $\pm$ 0.0500 $\bigstar$} & \cellgray{0.7636 $\pm$ 0.1910 $\triangledown$} & \cellgray{0.8493 $\pm$ 0.0510 $\vartriangle$} 
+
+
+?????????
+0.6530612244897959
+Scale A
+0.30612244897959173
+*****
+?????????
+0.7002551020408163
+Scale A
+0.4005102040816326
+*****
+?????????
+0.47066326530612246
+Scale A
+-0.058673469387755084
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.070 -              
+Structural      0.079 0.999          
+
+***********
+              base    compared_with             estimate   magnitude
+0             Both  Evolution-based   0.6530612244897959       small
+1             Both       Structural   0.7002551020408163      medium
+2  Evolution-based       Structural  0.47066326530612246  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8861 $\pm$ 0.0500 $\bigstar$
+1  Evolution-based  0.7636 $\pm$ 0.1910 $\triangledown$
+2       Structural   0.8493 $\pm$ 0.0510 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8861 $\pm$ 0.0500 $\bigstar$ & 0.7636 $\pm$ 0.1910 $\triangledown$ & 0.8493 $\pm$ 0.0510 $\vartriangle$ 
+
+
+\cellbold{0.8861 $\pm$ 0.0500 $\bigstar$} & \cellgray{0.7636 $\pm$ 0.1910 $\triangledown$} & \cellgray{0.8493 $\pm$ 0.0510 $\vartriangle$} 
+
+
+?????????
+0.6530612244897959
+Scale A
+0.30612244897959173
+*****
+?????????
+0.7002551020408163
+Scale A
+0.4005102040816326
+*****
+?????????
+0.47066326530612246
+Scale A
+-0.058673469387755084
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.070 -              
+Structural      0.079 0.999          
+
+***********
+              base    compared_with             estimate   magnitude
+0             Both  Evolution-based   0.6530612244897959       small
+1             Both       Structural   0.7002551020408163      medium
+2  Evolution-based       Structural  0.47066326530612246  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8861 $\pm$ 0.0500 $\bigstar$
+1  Evolution-based  0.7636 $\pm$ 0.1910 $\triangledown$
+2       Structural   0.8493 $\pm$ 0.0510 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8861 $\pm$ 0.0500 $\bigstar$ & 0.7636 $\pm$ 0.1910 $\triangledown$ & 0.8493 $\pm$ 0.0510 $\vartriangle$ 
+
+
+\cellbold{0.8861 $\pm$ 0.0500 $\bigstar$} & \cellgray{0.7636 $\pm$ 0.1910 $\triangledown$} & \cellgray{0.8493 $\pm$ 0.0510 $\vartriangle$} 
+
+
+?????????
+0.6639030612244898
+Scale A
+0.32780612244897966
+*****
+?????????
+0.7008928571428571
+Scale A
+0.4017857142857142
+*****
+?????????
+0.46875
+Scale A
+-0.0625
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.055 -              
+Structural      0.071 0.994          
+
+***********
+              base    compared_with            estimate   magnitude
+0             Both  Evolution-based  0.6639030612244898       small
+1             Both       Structural  0.7008928571428571      medium
+2  Evolution-based       Structural             0.46875  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8050 $\pm$ 0.0770 $\bigstar$
+1  Evolution-based  0.6561 $\pm$ 0.2250 $\triangledown$
+2       Structural   0.7479 $\pm$ 0.0760 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8050 $\pm$ 0.0770 $\bigstar$ & 0.6561 $\pm$ 0.2250 $\triangledown$ & 0.7479 $\pm$ 0.0760 $\vartriangle$ 
+
+
+\cellbold{0.8050 $\pm$ 0.0770 $\bigstar$} & \cellgray{0.6561 $\pm$ 0.2250 $\triangledown$} & \cellgray{0.7479 $\pm$ 0.0760 $\vartriangle$} 
+
+
+?????????
+0.6639030612244898
+Scale A
+0.32780612244897966
+*****
+?????????
+0.7008928571428571
+Scale A
+0.4017857142857142
+*****
+?????????
+0.46875
+Scale A
+-0.0625
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.055 -              
+Structural      0.071 0.994          
+
+***********
+              base    compared_with            estimate   magnitude
+0             Both  Evolution-based  0.6639030612244898       small
+1             Both       Structural  0.7008928571428571      medium
+2  Evolution-based       Structural             0.46875  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8050 $\pm$ 0.0770 $\bigstar$
+1  Evolution-based  0.6561 $\pm$ 0.2250 $\triangledown$
+2       Structural   0.7479 $\pm$ 0.0760 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8050 $\pm$ 0.0770 $\bigstar$ & 0.6561 $\pm$ 0.2250 $\triangledown$ & 0.7479 $\pm$ 0.0760 $\vartriangle$ 
+
+
+\cellbold{0.8050 $\pm$ 0.0770 $\bigstar$} & \cellgray{0.6561 $\pm$ 0.2250 $\triangledown$} & \cellgray{0.7479 $\pm$ 0.0760 $\vartriangle$} 
+
+
+?????????
+0.6639030612244898
+Scale A
+0.32780612244897966
+*****
+?????????
+0.7008928571428571
+Scale A
+0.4017857142857142
+*****
+?????????
+0.46875
+Scale A
+-0.0625
+*****
+Best config: Both 
+
+Means:
+***********
+                Both  Evolution-based
+Evolution-based 0.055 -              
+Structural      0.071 0.994          
+
+***********
+              base    compared_with            estimate   magnitude
+0             Both  Evolution-based  0.6639030612244898       small
+1             Both       Structural  0.7008928571428571      medium
+2  Evolution-based       Structural             0.46875  negligible
+***********
+              name                       avg_std_effect
+0             Both       0.8050 $\pm$ 0.0770 $\bigstar$
+1  Evolution-based  0.6561 $\pm$ 0.2250 $\triangledown$
+2       Structural   0.7479 $\pm$ 0.0760 $\vartriangle$
+                           Both                      Evolution-based                          Structural
+0.8050 $\pm$ 0.0770 $\bigstar$ & 0.6561 $\pm$ 0.2250 $\triangledown$ & 0.7479 $\pm$ 0.0760 $\vartriangle$ 
+
+
+\cellbold{0.8050 $\pm$ 0.0770 $\bigstar$} & \cellgray{0.6561 $\pm$ 0.2250 $\triangledown$} & \cellgray{0.7479 $\pm$ 0.0760 $\vartriangle$} 
+
+
+?????????
+0.7283163265306123
+Scale A
+0.4566326530612246
+*****
+?????????
+0.6383928571428571
+Scale A
+0.2767857142857142
+*****
+?????????
+0.3590561224489796
+Scale A
+-0.2818877551020408
+*****
+Best config: Both 
+
+Means:
+***********
+                Both   Evolution-based
+Evolution-based 0.0067 -              
+Structural      0.2932 0.2783         
+
+***********
+              base    compared_with            estimate magnitude
+0             Both  Evolution-based  0.7283163265306123    medium
+1             Both       Structural  0.6383928571428571     small
+2  Evolution-based       Structural  0.3590561224489796     small
+***********
+              name                       avg_std_effect
+0             Both       0.7550 $\pm$ 0.0840 $\bigstar$
+1  Evolution-based   0.6471 $\pm$ 0.1570 $\vartriangle$
+2       Structural  0.7164 $\pm$ 0.0850 $\triangledown$
+                           Both                     Evolution-based                           Structural
+0.7550 $\pm$ 0.0840 $\bigstar$ & 0.6471 $\pm$ 0.1570 $\vartriangle$ & 0.7164 $\pm$ 0.0850 $\triangledown$ 
+
+
+\cellbold{0.7550 $\pm$ 0.0840 $\bigstar$} & 0.6471 $\pm$ 0.1570 $\vartriangle$ & \cellgray{0.7164 $\pm$ 0.0850 $\triangledown$} 
+
+
+?????????
+0.7283163265306123
+Scale A
+0.4566326530612246
+*****
+?????????
+0.6383928571428571
+Scale A
+0.2767857142857142
+*****
+?????????
+0.3590561224489796
+Scale A
+-0.2818877551020408
+*****
+Best config: Both 
+
+Means:
+***********
+                Both   Evolution-based
+Evolution-based 0.0067 -              
+Structural      0.2932 0.2783         
+
+***********
+              base    compared_with            estimate magnitude
+0             Both  Evolution-based  0.7283163265306123    medium
+1             Both       Structural  0.6383928571428571     small
+2  Evolution-based       Structural  0.3590561224489796     small
+***********
+              name                       avg_std_effect
+0             Both       0.7550 $\pm$ 0.0840 $\bigstar$
+1  Evolution-based   0.6471 $\pm$ 0.1570 $\vartriangle$
+2       Structural  0.7164 $\pm$ 0.0850 $\triangledown$
+                           Both                     Evolution-based                           Structural
+0.7550 $\pm$ 0.0840 $\bigstar$ & 0.6471 $\pm$ 0.1570 $\vartriangle$ & 0.7164 $\pm$ 0.0850 $\triangledown$ 
+
+
+\cellbold{0.7550 $\pm$ 0.0840 $\bigstar$} & 0.6471 $\pm$ 0.1570 $\vartriangle$ & \cellgray{0.7164 $\pm$ 0.0850 $\triangledown$} 
+
+
+?????????
+0.7283163265306123
+Scale A
+0.4566326530612246
+*****
+?????????
+0.6383928571428571
+Scale A
+0.2767857142857142
+*****
+?????????
+0.3590561224489796
+Scale A
+-0.2818877551020408
+*****
+Best config: Both 
+
+Means:
+***********
+                Both   Evolution-based
+Evolution-based 0.0067 -              
+Structural      0.2932 0.2783         
+
+***********
+              base    compared_with            estimate magnitude
+0             Both  Evolution-based  0.7283163265306123    medium
+1             Both       Structural  0.6383928571428571     small
+2  Evolution-based       Structural  0.3590561224489796     small
+***********
+              name                       avg_std_effect
+0             Both       0.7550 $\pm$ 0.0840 $\bigstar$
+1  Evolution-based   0.6471 $\pm$ 0.1570 $\vartriangle$
+2       Structural  0.7164 $\pm$ 0.0850 $\triangledown$
+                           Both                     Evolution-based                           Structural
+0.7550 $\pm$ 0.0840 $\bigstar$ & 0.6471 $\pm$ 0.1570 $\vartriangle$ & 0.7164 $\pm$ 0.0850 $\triangledown$ 
+
+
+\cellbold{0.7550 $\pm$ 0.0840 $\bigstar$} & 0.6471 $\pm$ 0.1570 $\vartriangle$ & \cellgray{0.7164 $\pm$ 0.0850 $\triangledown$} 
+
+
+?????????
+0.8698979591836735
+Scale A
+0.739795918367347
+*****
+?????????
+0.6996173469387755
+Scale A
+0.39923469387755106
+*****
+?????????
+0.24426020408163265
+Scale A
+-0.5114795918367347
+*****
+Best config: Both 
+
+Means:
+***********
+                Both    Evolution-based
+Evolution-based 1.8e-06 -              
+Structural      0.087   0.014          
+
+***********
+              base    compared_with             estimate magnitude
+0             Both  Evolution-based   0.8698979591836735     large
+1             Both       Structural   0.6996173469387755    medium
+2  Evolution-based       Structural  0.24426020408163265     large
+***********
+              name                        avg_std_effect
+0             Both        0.7804 $\pm$ 0.0660 $\bigstar$
+1  Evolution-based  0.6550 $\pm$ 0.0840 $\blacktriangle$
+2       Structural    0.7332 $\pm$ 0.0640 $\vartriangle$
+                           Both                       Evolution-based                          Structural
+0.7804 $\pm$ 0.0660 $\bigstar$ & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & 0.7332 $\pm$ 0.0640 $\vartriangle$ 
+
+
+\cellbold{0.7804 $\pm$ 0.0660 $\bigstar$} & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & \cellgray{0.7332 $\pm$ 0.0640 $\vartriangle$} 
+
+
+?????????
+0.8698979591836735
+Scale A
+0.739795918367347
+*****
+?????????
+0.6996173469387755
+Scale A
+0.39923469387755106
+*****
+?????????
+0.24426020408163265
+Scale A
+-0.5114795918367347
+*****
+Best config: Both 
+
+Means:
+***********
+                Both    Evolution-based
+Evolution-based 1.8e-06 -              
+Structural      0.087   0.014          
+
+***********
+              base    compared_with             estimate magnitude
+0             Both  Evolution-based   0.8698979591836735     large
+1             Both       Structural   0.6996173469387755    medium
+2  Evolution-based       Structural  0.24426020408163265     large
+***********
+              name                        avg_std_effect
+0             Both        0.7804 $\pm$ 0.0660 $\bigstar$
+1  Evolution-based  0.6550 $\pm$ 0.0840 $\blacktriangle$
+2       Structural    0.7332 $\pm$ 0.0640 $\vartriangle$
+                           Both                       Evolution-based                          Structural
+0.7804 $\pm$ 0.0660 $\bigstar$ & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & 0.7332 $\pm$ 0.0640 $\vartriangle$ 
+
+
+\cellbold{0.7804 $\pm$ 0.0660 $\bigstar$} & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & \cellgray{0.7332 $\pm$ 0.0640 $\vartriangle$} 
+
+
+?????????
+0.8698979591836735
+Scale A
+0.739795918367347
+*****
+?????????
+0.6996173469387755
+Scale A
+0.39923469387755106
+*****
+?????????
+0.24426020408163265
+Scale A
+-0.5114795918367347
+*****
+Best config: Both 
+
+Means:
+***********
+                Both    Evolution-based
+Evolution-based 1.8e-06 -              
+Structural      0.087   0.014          
+
+***********
+              base    compared_with             estimate magnitude
+0             Both  Evolution-based   0.8698979591836735     large
+1             Both       Structural   0.6996173469387755    medium
+2  Evolution-based       Structural  0.24426020408163265     large
+***********
+              name                        avg_std_effect
+0             Both        0.7804 $\pm$ 0.0660 $\bigstar$
+1  Evolution-based  0.6550 $\pm$ 0.0840 $\blacktriangle$
+2       Structural    0.7332 $\pm$ 0.0640 $\vartriangle$
+                           Both                       Evolution-based                          Structural
+0.7804 $\pm$ 0.0660 $\bigstar$ & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & 0.7332 $\pm$ 0.0640 $\vartriangle$ 
+
+
+\cellbold{0.7804 $\pm$ 0.0660 $\bigstar$} & 0.6550 $\pm$ 0.0840 $\blacktriangle$ & \cellgray{0.7332 $\pm$ 0.0640 $\vartriangle$} 
+
+

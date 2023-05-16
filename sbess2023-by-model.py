@@ -49,8 +49,8 @@ def print_mean(df,metric):
 if __name__ == '__main__':
     DATASETS = [ 'best-results-sbess.csv']
     metrics = ['F1','Acc','Sen','AUC']
-    #models = ['Structural','Both','Evolution-based']
-    models = ['RUS','ROS','ENN','ADA','SMOTE','NONE']
+    models = ['Structural','Both','Evolution-based']
+    #models = ['RUS','ROS','ENN','ADA','SMOTE','NONE']
 
     for dataset in DATASETS:
         for metric in metrics:
@@ -61,7 +61,7 @@ if __name__ == '__main__':
                 fig, ax = plt.subplots(figsize=(10,6))
                
                 # for KRUSKAL WALLIS ANALYSIS
-                k = kruskal_wallis(df, metric, 'RS', sort=False)
+                k = kruskal_wallis(df, metric, 'Application', sort=False)
                 kruskal_result, posthoc = k.apply(ax)
 
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
                 #kruskal_results
                 ax.set_ylabel( model + " - " + metric )
                 
-                plt.savefig("results/resultados-sbess-resample-" + metric +"-"+ model +".pdf", bbox_inches='tight')
+                plt.savefig("results/resultados-sbess-dataset-" + metric +"-"+ model +".pdf", bbox_inches='tight')
                 plt.cla()
                 plt.close(fig)
                 mean, best = print_mean(df,metric)
